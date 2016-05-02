@@ -1,0 +1,17 @@
+language: java
+
+jdk:
+  - oraclejdk8
+  
+before_install:
+  cd TP_Anual #solo si no tienen el pom en el raíz del repositorio
+
+notifications:
+  email:
+    recipients:
+      - danimarche32@gmail.com
+      - romerollanos.julian@gmail.com
+      - alex.falcon.25@hotmail.com
+      - fernando.dodino@gmail.com
+    on_success: [change] # default: change | [always|never|change]
+    on_failure: [always] # default: always | [always|never|change]
